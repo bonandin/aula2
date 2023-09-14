@@ -96,18 +96,15 @@ body {
 }
 
 .eu {
-    flex: 3;
-    flex-direction: row;
-    text-align: justify; /* Centraliza a imagem horizontalmente */
-    
-    position: relative; /* Permite sobrepor elementos filhos */
-    overflow: hidden; /* Esconde elementos filhos que podem estender além da imagem */
-    transition: 0.3s ease-in-out; /* Efeito de escurecimento com transição suave quando o mouse passa sobre a imagem */
+    max-width: 50%;
+    width: auto;
+    max-height: 300%;
+   position: fixed;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-.eu:hover {
-    filter: brightness(0.7); /* Escurece a imagem em 30% (70% de brilho) ao passar o mouse */
-}
+
 
 /* Espaçamento entre o conteúdo principal (main) e o rodapé (footer) */
 .rodape {
