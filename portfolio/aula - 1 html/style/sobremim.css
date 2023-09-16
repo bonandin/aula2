@@ -1,7 +1,6 @@
 /* Importa duas fontes do Google Fonts: Krona One e Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
-
 /* Define estilos para todos os elementos, zerando margens e preenchimentos */
 * {
     margin: 0;
@@ -14,7 +13,7 @@ body {
     height: 100vh;
 
     /* Cria um gradiente de cores de cima para baixo como plano de fundo */
-    background: linear-gradient(to bottom, #324e17, #324e17 #324e17);
+    background: linear-gradient(to bottom, #96925d,#96925d  );
 
     /* Define o tamanho de fundo para cobrir toda a área disponível */
     background-size: cover;
@@ -29,7 +28,7 @@ body {
     margin: 0;
 
     /* Define a cor do texto dentro do corpo como branco */
-    color: rgb(0, 0, 0);
+    color: rgb(42, 71, 41);
 }
 
 /* Espaçamento entre o cabeçalho (header) e o conteúdo principal (main) */
@@ -48,7 +47,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(42, 71, 41);
     text-decoration: none;
 }
 
@@ -95,15 +94,35 @@ body {
      margin-bottom: 20px;
 }
 
-.eu {
-    max-width: 50%;
-    width: auto;
-    max-height: 300%;
-   position: fixed;
-    overflow: hidden;
-    border-radius: 50%;
+.euzinha.jpg {
+        flex: 1;
+        flex-direction: row;
+        text-align: center; /* Centraliza a imagem horizontalmente */
+        
+        position: relative; /* Permite sobrepor elementos filhos */
+        overflow: hidden; /* Esconde elementos filhos que podem estender além da imagem */
+        transition: 0.3s ease-in-out; /* Efeito de escurecimento com transição suave quando o mouse passa sobre a imagem */
+       
+             
 }
 
+.euzinha.jpg:hover {
+    filter: brightness(0.7); /* Escurece a imagem em 30% (70% de brilho) ao passar o mouse */
+}
+
+.euzinha.jpg {
+        max-width: 25%;
+        width: auto;
+        max-height: 25%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+}
+
+/* Efeito de escala suave ao passar o mouse sobre a imagem */
+.euzinha.jpg:hover .euzinha.jpg {
+    transform: scale(1.1); /* Aumenta a escala da imagem em 10% ao passar o mouse */
+}
 
 
 /* Espaçamento entre o conteúdo principal (main) e o rodapé (footer) */
@@ -113,7 +132,7 @@ body {
     left: 0;
     width: 100%;
     color: white;
-    background-color: #083617;
+    background-color:rgb(42, 71, 41);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,5 +145,6 @@ body {
 
 /* Estilo de link no rodapé */
 .rodape a:hover {
-    color: #FFA500;
+    color: #03e729;
 }
+
