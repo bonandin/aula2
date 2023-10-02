@@ -6,13 +6,13 @@
     }
     
     body {
-    height: 50vh;
+    height: 100vh;
     background: linear-gradient(to bottom, #413e3a, #525151,);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    color:rgb(77, 75, 75) ;
+    color:rgb(0, 0, 0) ;
 }
     
 .cabecalho {
@@ -22,7 +22,7 @@
 
 .cabecalho-menu {
     display: flex;
-    gap: 40px;
+    gap: 60px;
 }
  
 .cabecalho-menu-links {
@@ -51,7 +51,8 @@
             justify-content: center;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 2px;
+            margin: 10%;
            align-items: center;
            text-align: justify;
            height: auto;
@@ -63,6 +64,7 @@
             font-size: 50px;
             font-family: 'Lora', serif;
             text-align: justify;
+            margin: 15%;
      }
     
     
@@ -70,6 +72,7 @@
             font-size: 25px;
             font-family: 'Montserrat', sans-serif;
             text-align: justify; 
+          
              }
     
     .apresentacao-links {
